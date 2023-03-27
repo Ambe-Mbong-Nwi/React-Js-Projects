@@ -1,0 +1,83 @@
+*{
+  font-size: 30px;
+  margin: 50px;
+  background-color: antiquewhite;
+}
+
+button{
+  margin: 0px;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  text-decoration:underline;
+}
+
+h2{
+  color: black;
+  background-color:azure;
+  font-size: larger;
+}
+
+.card{
+  background-color:azure;
+  padding: 20px;
+  padding-bottom: 5px;
+  width: 400px;
+  box-shadow:5px 5px 20px rgb(226, 125, 125) ; /*horizontal shadow, vertical, blurness, color. use, to put 2 different types*/
+}
+
+.actions{
+  background-color: azure;
+  margin-bottom: 15px;
+}
+
+.btn{
+  background-color:rgb(226, 125, 125);
+  margin-left: 230px;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 20px;
+  color: white;
+}
+
+button:hover{
+  background-color: brown;
+}
+
+.cancel{
+  background-color: transparent;
+  color: brown;
+  border: solid 2px brown;
+  margin-left: 5px;
+}
+
+.cancel:hover{
+  background-color:bisque;
+}
+
+.modal{
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 25rem;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgb(36, 31, 31); /*horizontal shadow, vertical, blurness, color. use, to put 2 different types*/
+ /* position: absolute;    /*so it displays/popups like a notification on the item instead of below it*/
+  position: fixed;
+  top: 20vh; /*viewport-height: certain percentage of any browser height*/
+  left: calc(50% - 15rem);    /*used for calculations to have exact values ie remove 50rem from 50% the width of the page*/
+  /*both rem and em are scalable and relative units of size, but with em, the unit is relative to the font size of its parent element, while the rem unit is only relative to the root font size of the HTML document. The “r” in rem stands for “root”. */
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1;    /*geater than zero to bring it infront of the page but less than that of the modal to put it behind.*/
+    background-color: rgba(0, 0, 0, 0.75);       /*a here specifies the opacity*/
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
