@@ -13,7 +13,7 @@
 - This is a reactive Todo List. 
 - To run file, on your terminal use the command 'npm install' to download the node_modules folder
 - When the delete button is clicked, a pop-up is displayed.
-- To close htis pop-up you can use either of the two buttons or click on the backdrop.
+- To close this pop-up you can use either of the two buttons or click on the backdrop.
 
 ## Screenshots
 
